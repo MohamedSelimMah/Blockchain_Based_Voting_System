@@ -1,7 +1,7 @@
 from flask import Flask,request,jsonify
 from blockchain import Blockchain
 app = Flask(__name__)
-blockchain=blockchain()
+blockchain=Blockchain()
 @app.route('/')
 def index():
     return 'Blockchain voting API is working!'
