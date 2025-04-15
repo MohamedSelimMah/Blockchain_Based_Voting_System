@@ -16,7 +16,7 @@ def vote():
     if voter_hash in voted_ids:
         return jsonify({'message': 'You have already voted!'}), 400
 
-    blockchain.current_transactions.append({'voter': voter_hash, 'vote': vote})
+    blockchain.transactions.append({'voter': voter_hash, 'vote': vote})
     voted_ids.add(voter_hash)
 
     return jsonify({'message': 'Vote successfully recorded.'}), 200
