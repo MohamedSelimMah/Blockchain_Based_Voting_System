@@ -95,10 +95,10 @@ POST a JSON payload to `/vote`:
 
 ## 🛠️ Next Steps
 
-- Encryption
-- Admin dashboard
-- Multi-node blockchain for a more decentralized approach
-- UI and visualization
+- Vote encryption (e.g., AES) for vote privacy
+- Admin panel to view results
+- Add voter registration route
+- Simple CLI or UI for local testing
 
 ---
 
