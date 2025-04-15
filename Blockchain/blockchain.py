@@ -7,32 +7,32 @@ import requests
 
 class Blockchain:
     def __init__(self):
-        self.new_transactions =[]
+        self.transactions = []
         self.chain = []
         self.nodes = set()
 
-        self.new_block(proof=100,previous_hash='1')
+        self.new_block(proof=100, previous_hash='1')
 
-    def new_block(self,proof,previous_hash= None):
-        block={
+    def new_block(self, proof, previous_hash=None):
+        block = {
             'index': len(self.chain) + 1,
             'timestamp': time(),
-            'transactions':self.new_transactions,
-            'proof':proof,
-            'previous_hash':previous_hash or self.hash(self.chain[-1]),
+            'transactions': self.transactions,
+            'proof': proof,
+            'previous_hash': previous_hash or self.hash(self.chain[-1]),
         }
-        self.new_transactions = []
+        self.transactions = []
         self.chain.append(block)
         return block
 
-    def new_transactions(self,sender,amount,recipient):
-        self.new_transactions.append({
+    def add_transaction(self, sender, amount, recipient):
+        self.transactions.append({
             'sender': sender,
             'recipient': recipient,
             'amount': amount,
         })
 
-        return self.last_block['index']+1
+        return self.last_block['index'] + 1
 
     @staticmethod
     def hash(block):
