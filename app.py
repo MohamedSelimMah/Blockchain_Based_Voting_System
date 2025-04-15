@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from blockchain import Blockchain
+from Blockchain.blockchain import Blockchain
 import hashlib
 
 app = Flask(__name__)

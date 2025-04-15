@@ -8,7 +8,7 @@ class Blockchain:
         self.chain = []
         self.nodes = set()
 
-        self.new_block(previous_hash='1',proof='100')
+        self.new_block(proof='100',previous_hash='1')
 
     def new_block(self,proof,previous_hash= None):
         block={
@@ -39,3 +39,17 @@ class Blockchain:
     @property
     def last_block(self):
         return self.chain[-1]
+
+    def proof_of_work(self,last_proof):
+        proof=0
+        while self.valid_proof(last_proof,proof) is False:
+            proof += 1
+        return proof
+
+    @staticmethod
+    def valid_proof(last_proof,proof):
+        g=f'{last_proof}{proof}'.encode()
+        g_hash=hashlib.sha256(g).hexdigest()
+        return g_hash[:4] == "0000"
+
+
