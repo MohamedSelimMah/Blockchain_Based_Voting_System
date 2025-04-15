@@ -12,6 +12,7 @@ A simple and secure blockchain-powered voting system built with Python and Flask
 - 🛠️ Mine pending votes into new blocks via `/mine`
 - 🔍 View the full blockchain with `/chain`
 - 🌐 Flask-based REST API
+- 🧑‍🔧 Mining rewards for nodes performing Proof-of-Work
 
 ---
 
@@ -29,6 +30,7 @@ A simple and secure blockchain-powered voting system built with Python and Flask
    ```bash
    git clone https://github.com/yourusername/blockchain-voting-system.git
    cd blockchain-voting-system
+   ```
 
 2. **Install dependencies**
 
@@ -62,22 +64,24 @@ POST a JSON payload to `/vote`:
 
 ```json
 {
-  "voter_id": "your-unique-id",
-  "candidate": "Alice"
+  "voterId": "your-unique-id",
+  "vote": "Alice"
 }
 ```
 
-- `voter_id` will be hashed internally to ensure voter privacy.
+- `voterId` will be hashed internally to ensure voter privacy.
 - If the same voter tries to vote again, the system will reject it.
 
 ---
 
 ## 🔗 How It Works (Simplified)
 
-- Votes are collected and stored in memory temporarily.
-- When you mine using `/mine`, all pending votes are added to a block.
-- Each block is linked to the previous one using a hash (like a digital fingerprint).
-- Proof-of-Work ensures each block takes computing effort to mine — securing the chain from tampering.
+- Voters submit their vote by providing a unique `voterId` and a candidate name via the `/vote` endpoint.
+- The `voterId` is hashed and stored to prevent double voting.
+- Pending votes are stored in memory and are mined into new blocks using the `/mine` endpoint.
+- Proof-of-Work (PoW) is used to ensure blocks are computationally difficult to forge.
+- A mining reward is issued to the node performing the mining via the `/mine` endpoint.
+- Each block is linked to the previous block using a hash, ensuring the integrity of the blockchain.
 
 ---
 
@@ -85,16 +89,16 @@ POST a JSON payload to `/vote`:
 
 - **Transparency**: All votes are visible on the chain.
 - **Integrity**: Once added, blocks (and votes) can’t be altered.
-- **Security**: Voter IDs are never stored directly, only as hashes.
+- **Security**: Voter IDs are never stored directly, only as hashes, ensuring privacy.
 
 ---
 
 ## 🛠️ Next Steps
 
-- Encryption
-- Admin dashboard
-- Multi-node blockchain
-- UI and visualization
+- Vote encryption (e.g., AES) for vote privacy
+- Admin panel to view results
+- Add voter registration route
+- Simple CLI or UI for local testing
 
 ---
 
