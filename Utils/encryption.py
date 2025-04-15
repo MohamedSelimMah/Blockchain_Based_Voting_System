@@ -1,5 +1,4 @@
 import os
-
 from crypto.Cipher import AES
 
 
