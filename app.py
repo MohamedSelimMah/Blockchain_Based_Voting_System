@@ -8,6 +8,7 @@ import os
 app = Flask(__name__)
 blockchain = Blockchain()
 voted_ids = set()
+registered_voters = set()
 
 MINER_REWARD_ADDRESS = "miner-reward-address"
 
@@ -17,7 +18,8 @@ def vote():
     voterId = data.get('voterId')
     vote = data.get('vote')
     voter_hash = hashlib.sha256(voterId.encode()).hexdigest()
-
+    if voter_hash not in registered_voters:
+        return jsonify({'error': 'Voter not registered'}), 403
     if voter_hash in voted_ids:
         return jsonify({'message': 'You have already voted!'}), 400
 
@@ -76,6 +78,26 @@ def full_chain():
         'length': len(blockchain.chain),
     }
     return jsonify(response), 200
+
+@app.route('/register', methods=['POST'])
+def register():
+    data = request.get_json()
+    voterId = data.get('voterId')
+
+    if not voterId:
+        return jsonify({'error': 'Voter ID is required'}), 400
+
+    voter_hash = hashlib.sha256(voterId.encode()).hexdigest()
+
+    if voter_hash in registered_voters:
+        return jsonify({'error': 'Voter already registered'}), 400
+
+    registered_voters.add(voter_hash)
+    return jsonify({'message': 'Voter registered successfully', 'voter_hash': voter_hash}), 200
+
+@app.route('/admin/register', methods=['GET'])
+def list_voters():
+    return jsonify({'voters': list(registered_voters)}), 200
 
 @app.route('/')
 def home():
