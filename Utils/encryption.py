@@ -1,6 +1,5 @@
 import os
-from Crypto.Cipher import AES
-
+from Cryptodome.Cipher import AES
 
 def pad(data):
     padding_length = 16 - len(data)%16
