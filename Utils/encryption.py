@@ -1,5 +1,5 @@
 import os
-from crypto.Cipher import AES
+from Crypto.Cipher import AES
 
 
 def pad(data):

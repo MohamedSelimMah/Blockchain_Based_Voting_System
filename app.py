@@ -1,6 +1,9 @@
 from flask import Flask, request, jsonify
 from Blockchain.blockchain import Blockchain
 import hashlib
+from Utils.encryption import encrypt
+import os
+
 
 app = Flask(__name__)
 blockchain = Blockchain()
@@ -18,10 +21,20 @@ def vote():
     if voter_hash in voted_ids:
         return jsonify({'message': 'You have already voted!'}), 400
 
+    with open("temp_vote.txt","w") as f:
+        f.write(vote)
+
+    encrypted_file = f"{voter_hash}_vote_encrypted.txt"
+    key,iv = encrypt("temp_vote.txt",encrypted_file)
+    os.remove("temp_vote.txt")
+
+    if not key:
+        return jsonify({'message': 'Encryption Failed'}), 400
+
     blockchain.add_transaction(
         sender=voter_hash,
-        recipient=vote,
-        amount=1  # 1 vote
+        recipient=encrypted_file,
+        amount=1
     )
     voted_ids.add(voter_hash)
 
