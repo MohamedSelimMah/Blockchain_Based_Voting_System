@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from Blockchain.blockchain import Blockchain
 import hashlib
 from Utils.encryption import encrypt
+from functools import wraps
 import os
 
 
@@ -98,6 +99,21 @@ def register():
 @app.route('/admin/register', methods=['GET'])
 def list_voters():
     return jsonify({'voters': list(registered_voters)}), 200
+
+ADMIN_KEY = os.getenv("ADMIN_KEY", "default-secret-key")  # Use env var later
+
+def admin_required(f):
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+        if request.headers.get("X-Admin-Key") != ADMIN_KEY:
+            return jsonify({"error": "Unauthorized"}), 403
+        return f(*args, **kwargs)
+    return wrapper
+
+@app.route('/admin/results', methods=['GET'])
+@admin_required
+def results():
+    return jsonify({"results": "Decrypted vote tally here"}), 200
 
 @app.route('/')
 def home():
