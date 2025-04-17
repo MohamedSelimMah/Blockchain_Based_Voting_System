@@ -4,7 +4,13 @@ import hashlib
 from Utils.encryption import encrypt
 from functools import wraps
 import os
+from dotenv import load_dotenv
 
+
+load_dotenv()
+ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD')
+ADMIN_USERNAME = os.getenv('ADMIN_USERNAME')
+JWT_SECRET = os.getenv('JWT_SECRET')
 
 app = Flask(__name__)
 blockchain = Blockchain()
