@@ -113,7 +113,9 @@ def admin_required(f):
 @app.route('/admin/results', methods=['GET'])
 @admin_required
 def results():
-    return jsonify({"results": "Decrypted vote tally here"}), 200
+    vote_counts= {}
+    ADMIN_AES_KEY = os.getenv("ADMIN_AES_KEY", "default-secret-key")
+    ADMIN_IV = os.getenv("ADMIN_IV", "default-secret-key")
 
 @app.route('/')
 def home():
