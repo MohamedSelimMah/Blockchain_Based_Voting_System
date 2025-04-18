@@ -5,7 +5,13 @@ from Utils.encryption import encrypt, decrypt
 from functools import wraps
 from Utils.encryption import decrypt
 import os
+from dotenv import load_dotenv
 
+
+load_dotenv()
+ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD')
+ADMIN_USERNAME = os.getenv('ADMIN_USERNAME')
+JWT_SECRET = os.getenv('JWT_SECRET')
 
 app = Flask(__name__)
 blockchain = Blockchain()
@@ -138,7 +144,7 @@ def results():
                 print(f"Decryption failed for {encrypted_file}: {e}")
 
     return jsonify({"results": vote_counts}), 200
-
+q
 @app.route('/')
 def home():
     return "Blockchain Voting System - Endpoints: /vote (POST), /mine (GET), /chain (GET)"
