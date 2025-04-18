@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify
 from Blockchain.blockchain import Blockchain
 import hashlib
-from Utils.encryption import encrypt
+from Utils.encryption import encrypt, decrypt
 from functools import wraps
+from Utils.encryption import decrypt
 import os
 
 
@@ -116,6 +117,27 @@ def results():
     vote_counts= {}
     ADMIN_AES_KEY = os.getenv("ADMIN_AES_KEY", "default-secret-key")
     ADMIN_IV = os.getenv("ADMIN_IV", "default-secret-key")
+
+    for block in blockchain.chain:
+        for tx in block['transactions']:
+            if tx['sender'] == 'network':
+                continue
+            encrypted_file = tx['recipient']  # Fixed typo
+            try:
+                decrypt(
+                    key=ADMIN_AES_KEY,
+                    iv=ADMIN_IV,
+                    input_file=encrypted_file,
+                    output_file="temp_decrypted.txt"
+                )
+                with open("temp_decrypted.txt", "r") as f:
+                    vote = f.read().strip()
+                vote_counts[vote] = vote_counts.get(vote, 0) + 1
+                os.remove("temp_decrypted.txt")
+            except Exception as e:
+                print(f"Decryption failed for {encrypted_file}: {e}")
+
+    return jsonify({"results": vote_counts}), 200
 
 @app.route('/')
 def home():
