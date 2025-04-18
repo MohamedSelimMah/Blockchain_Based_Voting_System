@@ -144,7 +144,6 @@ def results():
                 print(f"Decryption failed for {encrypted_file}: {e}")
 
     return jsonify({"results": vote_counts}), 200
-q
 @app.route('/')
 def home():
     return "Blockchain Voting System - Endpoints: /vote (POST), /mine (GET), /chain (GET)"
