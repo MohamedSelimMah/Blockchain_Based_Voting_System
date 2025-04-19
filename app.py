@@ -3,22 +3,26 @@ from Blockchain.blockchain import Blockchain
 import hashlib
 from Utils.encryption import encrypt, decrypt
 from functools import wraps
-from Utils.encryption import decrypt
 import os
 from dotenv import load_dotenv
 
-
 load_dotenv()
-ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD')
-ADMIN_USERNAME = os.getenv('ADMIN_USERNAME')
-JWT_SECRET = os.getenv('JWT_SECRET')
 
 app = Flask(__name__)
 blockchain = Blockchain()
 voted_ids = set()
 registered_voters = set()
 
+ADMIN_KEY = os.getenv("ADMIN_KEY", "default-secret-key")
 MINER_REWARD_ADDRESS = "miner-reward-address"
+
+def admin_required(f):
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+        if request.headers.get("X-Admin-Key") != ADMIN_KEY:
+            return jsonify({"error": "Unauthorized"}), 403
+        return f(*args, **kwargs)
+    return wrapper
 
 @app.route('/vote', methods=['POST'])
 def vote():
@@ -31,11 +35,11 @@ def vote():
     if voter_hash in voted_ids:
         return jsonify({'message': 'You have already voted!'}), 400
 
-    with open("temp_vote.txt","w") as f:
+    with open("temp_vote.txt", "w") as f:
         f.write(vote)
 
     encrypted_file = f"{voter_hash}_vote_encrypted.txt"
-    key,iv = encrypt("temp_vote.txt",encrypted_file)
+    key, iv = encrypt("temp_vote.txt", encrypted_file)
     os.remove("temp_vote.txt")
 
     if not key:
@@ -57,35 +61,31 @@ def mine():
 
     last_block = blockchain.last_block
     last_proof = last_block['proof']
-
     proof = blockchain.proof_of_work(last_proof)
 
     blockchain.add_transaction(
         sender="network",
         recipient=MINER_REWARD_ADDRESS,
-        amount=1  # Mining reward
+        amount=1
     )
 
     previous_hash = blockchain.hash(last_block)
     block = blockchain.new_block(proof, previous_hash)
 
-    response = {
+    return jsonify({
         'message': 'New Block Forged',
         'index': block['index'],
         'transactions': block['transactions'],
         'proof': block['proof'],
         'previous_hash': block['previous_hash'],
-    }
-
-    return jsonify(response), 200
+    }), 200
 
 @app.route('/chain', methods=['GET'])
 def full_chain():
-    response = {
+    return jsonify({
         'chain': blockchain.chain,
         'length': len(blockchain.chain),
-    }
-    return jsonify(response), 200
+    }), 200
 
 @app.route('/register', methods=['POST'])
 def register():
@@ -107,20 +107,10 @@ def register():
 def list_voters():
     return jsonify({'voters': list(registered_voters)}), 200
 
-ADMIN_KEY = os.getenv("ADMIN_KEY", "default-secret-key")  # Use env var later
-
-def admin_required(f):
-    @wraps(f)
-    def wrapper(*args, **kwargs):
-        if request.headers.get("X-Admin-Key") != ADMIN_KEY:
-            return jsonify({"error": "Unauthorized"}), 403
-        return f(*args, **kwargs)
-    return wrapper
-
 @app.route('/admin/results', methods=['GET'])
 @admin_required
 def results():
-    vote_counts= {}
+    vote_counts = {}
     ADMIN_AES_KEY = os.getenv("ADMIN_AES_KEY", "default-secret-key")
     ADMIN_IV = os.getenv("ADMIN_IV", "default-secret-key")
 
@@ -128,7 +118,7 @@ def results():
         for tx in block['transactions']:
             if tx['sender'] == 'network':
                 continue
-            encrypted_file = tx['recipient']  # Fixed typo
+            encrypted_file = tx['recipient']
             try:
                 decrypt(
                     key=ADMIN_AES_KEY,
@@ -145,10 +135,35 @@ def results():
 
     return jsonify({"results": vote_counts}), 200
 
+@app.route('/admin/decrypt', methods=['GET'])
+@admin_required
+def admin_decrypt():
+    filename = request.args.get('file')
+
+    if not filename or not filename.endswith('_vote_encrypted.txt'):
+        return jsonify({'error': 'Invalid or missing file name'}), 400
+
+    filepath = os.path.join(os.getcwd(), filename)
+    if not os.path.exists(filepath):
+        return jsonify({'error': 'File not found'}), 404
+
+    try:
+        decrypt(
+            key=os.getenv("ADMIN_AES_KEY", "default-secret-key"),
+            iv=os.getenv("ADMIN_IV", "default-secret-key"),
+            input_file=filepath,
+            output_file="temp_admin_decrypted.txt"
+        )
+        with open("temp_admin_decrypted.txt", "r") as f:
+            vote = f.read().strip()
+        os.remove("temp_admin_decrypted.txt")
+        return jsonify({'decrypted_vote': vote}), 200
+    except Exception as e:
+        return jsonify({'error': f"Decryption failed: {str(e)}"}), 500
+
 @app.route('/')
 def home():
-    return "Blockchain Voting System - Endpoints: /vote (POST), /mine (GET), /chain (GET)"
+    return "Blockchain Voting System - Endpoints: /vote, /mine, /chain, /register, /admin/*"
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
-
