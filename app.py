@@ -14,8 +14,11 @@ voted_ids = set()
 registered_voters = set()
 
 ADMIN_KEY = os.getenv("ADMIN_KEY", "default-secret-key")
+ADMIN_AES_KEY = os.getenv("ADMIN_AES_KEY", "default-secret-key")
+ADMIN_IV = os.getenv("ADMIN_IV", "default-secret-key")
 MINER_REWARD_ADDRESS = "miner-reward-address"
 
+# Admin route protection
 def admin_required(f):
     @wraps(f)
     def wrapper(*args, **kwargs):
@@ -24,11 +27,15 @@ def admin_required(f):
         return f(*args, **kwargs)
     return wrapper
 
+# User submits vote
 @app.route('/vote', methods=['POST'])
 def vote():
     data = request.get_json()
     voterId = data.get('voterId')
     vote = data.get('vote')
+    if not voterId or not vote:
+        return jsonify({'error': 'voterId and vote are required'}), 400
+
     voter_hash = hashlib.sha256(voterId.encode()).hexdigest()
     if voter_hash not in registered_voters:
         return jsonify({'error': 'Voter not registered'}), 403
@@ -54,6 +61,7 @@ def vote():
 
     return jsonify({'message': 'Vote successfully recorded.'}), 200
 
+# Mine a new block
 @app.route('/mine', methods=['GET'])
 def mine():
     if not blockchain.transactions:
@@ -80,6 +88,7 @@ def mine():
         'previous_hash': block['previous_hash'],
     }), 200
 
+# Show full chain
 @app.route('/chain', methods=['GET'])
 def full_chain():
     return jsonify({
@@ -87,6 +96,7 @@ def full_chain():
         'length': len(blockchain.chain),
     }), 200
 
+# Voter registration
 @app.route('/register', methods=['POST'])
 def register():
     data = request.get_json()
@@ -103,16 +113,16 @@ def register():
     registered_voters.add(voter_hash)
     return jsonify({'message': 'Voter registered successfully', 'voter_hash': voter_hash}), 200
 
+# Admin: view registered voters
 @app.route('/admin/register', methods=['GET'])
 def list_voters():
     return jsonify({'voters': list(registered_voters)}), 200
 
+# Admin: view voting results
 @app.route('/admin/results', methods=['GET'])
 @admin_required
 def results():
     vote_counts = {}
-    ADMIN_AES_KEY = os.getenv("ADMIN_AES_KEY", "default-secret-key")
-    ADMIN_IV = os.getenv("ADMIN_IV", "default-secret-key")
 
     for block in blockchain.chain:
         for tx in block['transactions']:
@@ -135,6 +145,7 @@ def results():
 
     return jsonify({"results": vote_counts}), 200
 
+# Admin: decrypt a specific file
 @app.route('/admin/decrypt', methods=['GET'])
 @admin_required
 def admin_decrypt():
@@ -149,18 +160,20 @@ def admin_decrypt():
 
     try:
         decrypt(
-            key=os.getenv("ADMIN_AES_KEY", "default-secret-key"),
-            iv=os.getenv("ADMIN_IV", "default-secret-key"),
-            input_file=filepath,
+            key=bytes.fromhex(ADMIN_AES_KEY),
+            iv=bytes.fromhex(ADMIN_IV),
+            input_file=filename,
             output_file="temp_admin_decrypted.txt"
         )
         with open("temp_admin_decrypted.txt", "r") as f:
             vote = f.read().strip()
         os.remove("temp_admin_decrypted.txt")
         return jsonify({'decrypted_vote': vote}), 200
+
     except Exception as e:
         return jsonify({'error': f"Decryption failed: {str(e)}"}), 500
 
+# Home route
 @app.route('/')
 def home():
     return "Blockchain Voting System - Endpoints: /vote, /mine, /chain, /register, /admin/*"
