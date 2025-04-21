@@ -1,6 +1,8 @@
 import os
 from Cryptodome.Cipher import AES
 import requests
+from future.backports.urllib.parse import urlparse
+
 
 def pad(data):
     padding_length = 16 - len(data)%16
@@ -57,7 +59,8 @@ def decrypt(key, iv, input_file, output_file):
         print(f"Decryption error: {str(e)}")
 
 def register_node(self,address):
-    pass
+    parsed_url = urlparse(address)
+    self.nodes.add(parsed_url.netloc)
 
 def valid_chain(self,chain):
     pass
