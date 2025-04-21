@@ -1,5 +1,6 @@
 import os
 from Cryptodome.Cipher import AES
+import requests
 
 def pad(data):
     padding_length = 16 - len(data)%16
@@ -54,3 +55,12 @@ def decrypt(key, iv, input_file, output_file):
 
     except Exception as e:
         print(f"Decryption error: {str(e)}")
+
+def register_node(self,address):
+    pass
+
+def valid_chain(self,chain):
+    pass
+
+def resolve_conflicts(self):
+    pass
