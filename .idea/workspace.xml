@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f79f5f63-b56b-48ae-a7e4-57173f05a935" name="Changes" comment="commited">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/encryption.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +172,7 @@
       <workItem from="1745167712512" duration="1449000" />
       <workItem from="1745220420081" duration="34000" />
       <workItem from="1745240465225" duration="191000" />
-      <workItem from="1745261743373" duration="709000" />
+      <workItem from="1745261743373" duration="2452000" />
     </task>
     <task id="LOCAL-00001" summary="commited">
       <option name="closed" value="true" />
@@ -303,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745262023529</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="commited">
+      <option name="closed" value="true" />
+      <created>1745263109470</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1745263109470</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
