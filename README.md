@@ -122,7 +122,6 @@ This project covers:
 - Secure app design
 
 ---
-
 ## 📄 License
 
 Open-source under the [MIT License](LICENSE)
