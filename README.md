@@ -1,18 +1,22 @@
-# 🗳️ Blockchain-Based Secure Voting System - v1.0
+# 🗳️ Blockchain-Based Secure Voting System - v1.5
 
-A simple and secure blockchain-powered voting system built with Python and Flask. This version is ideal for beginners who want to learn the basics of blockchain, REST APIs, and digital voting systems.
+A secure blockchain-powered voting system built with Python and Flask. Ideal for those exploring blockchain, REST APIs, encryption, and secure digital voting systems.
 
 ---
 
-## ✅ Version 1.0 – MVP Features
+## ✅ Version 1.5 – Feature Enhancements
 
-- ⛓️ Basic blockchain implementation with Proof-of-Work (PoW)
+- ⚓️ Basic blockchain with Proof-of-Work (PoW)
 - 🗳️ Cast votes using the `/vote` endpoint
-- 🚫 Prevent double voting using hashed Voter IDs
-- 🛠️ Mine pending votes into new blocks via `/mine`
-- 🔍 View the full blockchain with `/chain`
+- ⛔️ Prevent double voting via hashed Voter IDs
+- 🛠️ Mine pending votes into blocks via `/mine`
+- 🔍 View blockchain via `/chain`
 - 🌐 Flask-based REST API
-- 🧑‍🔧 Mining rewards for nodes performing Proof-of-Work
+- 🧑‍👷 Mining rewards for PoW
+- 🔐 **AES Vote Encryption** to protect vote content
+- 🔑 **Decryption logic restricted to admin only**
+- 📅 **Admin panel endpoints** for vote result visibility
+- 🔧 **Registration and validation logic** to manage voter eligibility
 
 ---
 
@@ -21,7 +25,8 @@ A simple and secure blockchain-powered voting system built with Python and Flask
 ### Requirements
 
 - Python 3.x
-- Flask (Install via pip)
+- Flask
+- `pycryptodome` (for AES encryption)
 
 ### Installation
 
@@ -35,7 +40,7 @@ A simple and secure blockchain-powered voting system built with Python and Flask
 2. **Install dependencies**
 
    ```bash
-   pip install flask
+   pip install flask pycryptodome
    ```
 
 3. **Run the app**
@@ -44,23 +49,26 @@ A simple and secure blockchain-powered voting system built with Python and Flask
    python app.py
    ```
 
-The server will run on `http://127.0.0.1:5000`.
+Server will run on `http://127.0.0.1:5000`
 
 ---
 
-## 📡 API Endpoints
+## 📱 API Endpoints
 
-| Method | Endpoint    | Description                           |
-|--------|-------------|---------------------------------------|
-| POST   | `/vote`     | Submit a vote                         |
-| GET    | `/mine`     | Mine pending votes into a block       |
-| GET    | `/chain`    | View the current blockchain           |
+| Method | Endpoint           | Description                                |
+|--------|--------------------|--------------------------------------------|
+| POST   | `/vote`            | Submit an encrypted vote                   |
+| GET    | `/mine`            | Mine votes into a block                    |
+| GET    | `/chain`           | View the entire blockchain                 |
+| POST   | `/register`        | Register a new voter                       |
+| POST   | `/admin/decrypt`   | Admin-only endpoint to decrypt votes       |
+| GET    | `/admin/results`   | Admin-only endpoint to view vote counts    |
 
 ---
 
-## 🧾 Sample Vote Submission
+## 📂 Sample Vote Submission
 
-POST a JSON payload to `/vote`:
+POST to `/vote`:
 
 ```json
 {
@@ -69,48 +77,53 @@ POST a JSON payload to `/vote`:
 }
 ```
 
-- `voterId` will be hashed internally to ensure voter privacy.
-- If the same voter tries to vote again, the system will reject it.
+- `voterId` is validated and hashed for integrity.
+- Vote is encrypted using AES before storage.
+- Duplicate votes are rejected.
 
 ---
 
-## 🔗 How It Works (Simplified)
+## 🔗 How It Works
 
-- Voters submit their vote by providing a unique `voterId` and a candidate name via the `/vote` endpoint.
-- The `voterId` is hashed and stored to prevent double voting.
-- Pending votes are stored in memory and are mined into new blocks using the `/mine` endpoint.
-- Proof-of-Work (PoW) is used to ensure blocks are computationally difficult to forge.
-- A mining reward is issued to the node performing the mining via the `/mine` endpoint.
-- Each block is linked to the previous block using a hash, ensuring the integrity of the blockchain.
-
----
-
-## 🎯 Why Use Blockchain?
-
-- **Transparency**: All votes are visible on the chain.
-- **Integrity**: Once added, blocks (and votes) can’t be altered.
-- **Security**: Voter IDs are never stored directly, only as hashes, ensuring privacy.
+1. **Registration**: Voters register via `/register`. Validation logic ensures one-time registration.
+2. **Voting**: Validated voters submit votes, which are AES-encrypted.
+3. **Mining**: Pending votes mined into blocks with Proof-of-Work.
+4. **Blockchain**: Each block is chained via secure hashing.
+5. **Admin Panel**:
+   - Only admin can decrypt and view vote contents.
+   - View results via `/admin/results`.
 
 ---
 
-## 🛠️ Next Steps
+## 🔗 Why Use Blockchain?
 
-- Vote encryption (e.g., AES) for vote privacy
-- Admin panel to view results
-- Add voter registration route
-- Simple CLI or UI for local testing
+- **Transparency**: Chain is publicly viewable
+- **Integrity**: Tamper-proof blocks
+- **Security**: Encrypted, private, and validated votes
+
+---
+
+## 🛠️ Coming Soon
+
+- Multi-node network
+- Consensus protocol
+- Web UI for voter interaction
+- Role-based access control
 
 ---
 
 ## 📘 Learn More
 
-This project is a great starting point to learn:
-- What blockchains are
-- How hashing works
-- How to build secure APIs using Flask
+This project covers:
+- Blockchain basics
+- Proof-of-Work
+- AES encryption
+- Flask API development
+- Secure app design
 
 ---
 
 ## 📄 License
 
 Open-source under the [MIT License](LICENSE)
+
