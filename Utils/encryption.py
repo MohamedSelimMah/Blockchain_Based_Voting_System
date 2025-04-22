@@ -63,7 +63,18 @@ def register_node(self,address):
     self.nodes.add(parsed_url.netloc)
 
 def valid_chain(self,chain):
-    pass
+    last_block = chain[0]
+    current_index = 1
+
+    while current_index < len(chain):
+        block = chain[current_index]
+        if block['previous_hash'] != last_block(last_block):
+            return False
+        if not self.valid_proof(last_block['proof'],block['proof']):
+            return False
+        last_block = block
+        current_index += 1
+    return True
 
 def resolve_conflicts(self):
     pass
