@@ -83,7 +83,7 @@ def resolve_conflicts(self):
 
     for node in neighbours:
         try:
-            response = requests.get(f"http://{node}/chain")
+            response = requests.get(f'http://{node}/chain')
             if response.status_code == 200:
                 length = response.json()['length']
                 chain = response.json()['chain']
