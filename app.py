@@ -212,7 +212,7 @@ def consensus():
         }), 200
 @app.route('/')
 def home():
-    return "Blockchain Voting System - Endpoints: /vote, /mine, /chain, /register, /admin/*"
+    return "Blockchain Voting System - Endpoints: /vote, /mine, /chain, /register, /admin/*, /nodes"
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
