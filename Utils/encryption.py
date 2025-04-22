@@ -77,4 +77,11 @@ def valid_chain(self,chain):
     return True
 
 def resolve_conflicts(self):
-    pass
+    neighbours = self.nodes
+    new_chain = None
+    max_len = len(self.chain)
+
+    for node in neighbours:
+        try:
+            response = requests.get(f"http://{node}/chain")
+            if response.status_code == 200:
