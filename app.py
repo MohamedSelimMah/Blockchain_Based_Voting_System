@@ -5,6 +5,7 @@ from Utils.encryption import encrypt, decrypt
 from functools import wraps
 import os
 from dotenv import load_dotenv
+from  urllib.parse import urlparse
 
 load_dotenv()
 
@@ -173,7 +174,42 @@ def admin_decrypt():
     except Exception as e:
         return jsonify({'error': f"Decryption failed: {str(e)}"}), 500
 
-# Home route
+
+@app.route('/nodes/register',methods=['POST'])
+def register_nodes():
+    values = request.get_json()
+    nodes  = values.get('nodes')
+
+    if nodes is None:
+        return jsonify({'error': 'Please Provide a list of node URLs'}), 400
+
+    for node in nodes:
+        parsed_url = urlparse(node)
+        if parsed_url.netloc:
+            blockchain.nodes.add(parsed_url.netloc)
+        elif parsed_url.path:
+            blockchain.nodes.add(parsed_url.path)
+        else:
+            return jsonify({'error': 'Invalid Node URL : {node}'}), 400
+    return jsonify({
+        'message': 'New nodes added',
+        'total_nodes': list(blockchain.nodes),
+    }), 201
+
+@app.route('/nodes/resolve', methods=['GET'])
+def consensus():
+    replaced = blockchain.resolve_conflicts()
+
+    if replaced:
+        return jsonify({
+            'message':'Chain was replaced with a longer valid chain.',
+            'new_chain': blockchain.chain
+        }),200
+    else:
+        return jsonify({
+            'message': 'Our chain is authoritative.',
+            'chain': blockchain.chain
+        }), 200
 @app.route('/')
 def home():
     return "Blockchain Voting System - Endpoints: /vote, /mine, /chain, /register, /admin/*"
