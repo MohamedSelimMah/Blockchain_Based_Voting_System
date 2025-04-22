@@ -85,3 +85,16 @@ def resolve_conflicts(self):
         try:
             response = requests.get(f"http://{node}/chain")
             if response.status_code == 200:
+                length = response.json()['length']
+                chain = response.json()['chain']
+
+                if length > max_len and self.valid_proof(chain):
+                    max_len = length
+                    new_chain = chain
+        except Exception as e:
+            print(f"Failed to connect to {node}: {e}")
+
+        if new_chain:
+            self.chain = new_chain
+            return True
+    return False
