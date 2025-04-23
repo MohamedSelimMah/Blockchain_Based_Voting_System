@@ -1,6 +1,7 @@
 import hashlib
 from time import time
 import json
+from urllib.parse import urlparse
 
 import requests
 
@@ -95,3 +96,9 @@ class Blockchain:
             return True
 
         return False
+
+    def register_nodes(self, address):
+        parsed_url = urlparse(address)
+        self.nodes.add(parsed_url.netloc)
+
+
