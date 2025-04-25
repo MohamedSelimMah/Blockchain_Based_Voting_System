@@ -254,7 +254,7 @@ def consensus():
 
 @app.route('/')
 def home():
-    return "Blockchain Voting System - Endpoints: /vote, /mine, /chain, /register, /admin/*, /nodes"
+    return render_template('Home.html')
 
 @app.route('/vote', methods=['GET'])
 def vote_page():
@@ -267,7 +267,7 @@ def register_page():
 @app.route('/result', methods=['GET'])
 @admin_required
 def results_page():
-    return render_template('results.html')
+    return render_template("results.html")
 @app.route('/login', methods=['GET'])
 def login_page():
     return render_template('login.html')

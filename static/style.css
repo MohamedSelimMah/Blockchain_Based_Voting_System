@@ -21,13 +21,13 @@ input, select, button {
 }
 
 button {
-    background: #4CAF50;
+    background: #4c68af;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 a {
-    color: #4CAF50;
+    color: #4c68af;
     text-decoration: none;
 }
