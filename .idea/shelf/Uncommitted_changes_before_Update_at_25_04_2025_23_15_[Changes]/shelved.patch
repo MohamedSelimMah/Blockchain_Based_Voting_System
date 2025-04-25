@@ -1,0 +1,498 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12__Changes_.xml	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
++++ /dev/null	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_17_04_2025_00_12_[Changes]" date="1744845145241" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 17/04/2025 00:12 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37_[Changes]/shelved.patch	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
++++ /dev/null	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
+@@ -1,94 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f79f5f63-b56b-48ae-a7e4-57173f05a935\" name=\"Changes\" comment=\"commited\">\r\n      <change beforePath=\"$PROJECT_DIR$/Utils/__init__.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Utils/__init__.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass\">\r\n    <envs>\r\n      <env key=\"FLASK_APP\" value=\"app\" />\r\n    </envs>\r\n    <option name=\"myCustomStartScript\" value=\"import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass\" />\r\n    <option name=\"myEnvs\">\r\n      <map>\r\n        <entry key=\"FLASK_APP\" value=\"app\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;MohamedSelimMah&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/MohamedSelimMah/Blockchain_Based_Voting_System.git&quot;,\r\n    &quot;accountId&quot;: &quot;45ca71d9-b2d6-4af7-9e16-8b695a65ec04&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2vjUwp0NW1XqNiq37Pmmok9k1J2\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Flask server.Blockchain-Based Voting System.executor\": \"Run\",\r\n    \"Python.app.executor\": \"Debug\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/selim/Documents/University/Project/Python/Blockchain-Based Voting System\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\selim\\Documents\\University\\Project\\Python\\Blockchain-Based Voting System\\Blockchain\" />\r\n      <recent name=\"C:\\Users\\selim\\Documents\\University\\Project\\Python\\Blockchain-Based Voting System\\Utils\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.app\">\r\n    <configuration name=\"app\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Blockchain-Based Voting System\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/app.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Blockchain-Based Voting System\" type=\"Python.FlaskServer\">\r\n      <module name=\"Blockchain-Based Voting System\" />\r\n      <option name=\"target\" value=\"$PROJECT_DIR$/app.py\" />\r\n      <option name=\"targetType\" value=\"PATH\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.app\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54\" />\r\n        <option value=\"bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f79f5f63-b56b-48ae-a7e4-57173f05a935\" name=\"Changes\" comment=\"\" />\r\n      <created>1744658218156</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1744658218156</updated>\r\n      <workItem from=\"1744658219384\" duration=\"4148000\" />\r\n      <workItem from=\"1744705080638\" duration=\"316000\" />\r\n      <workItem from=\"1744719464807\" duration=\"597000\" />\r\n      <workItem from=\"1744744107653\" duration=\"188000\" />\r\n      <workItem from=\"1744746328915\" duration=\"2713000\" />\r\n      <workItem from=\"1744750589446\" duration=\"1797000\" />\r\n      <workItem from=\"1744752868185\" duration=\"19000\" />\r\n      <workItem from=\"1744787608499\" duration=\"134000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744659028835</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744659028835</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744660925605</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744660925605</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744664378382</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744664378382</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744746860692</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744746860692</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744747624559</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744747624559</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744747691182</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744747691182</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744747923695</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744747923695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744748460650</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744748460651</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744752314212</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744752314212</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744843221556</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744843221557</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"commited\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"commited\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/Blockchain_Based_Voting_System$Blockchain_Based_Voting_System.coverage\" NAME=\"Blockchain-Based Voting System Coverage Results\" MODIFIED=\"1744840047692\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"\" />\r\n    <SUITE FILE_PATH=\"coverage/Blockchain_Based_Voting_System$app.coverage\" NAME=\"app Coverage Results\" MODIFIED=\"1744842531572\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 6b2d297326b93ec2c73a03b671ebfd7769e8e186)
+-+++ b/.idea/workspace.xml	(date 1744882658165)
+-@@ -4,9 +4,7 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="f79f5f63-b56b-48ae-a7e4-57173f05a935" name="Changes" comment="commited">
+--      <change beforePath="$PROJECT_DIR$/Utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/__init__.py" afterDir="false" />
+--    </list>
+-+    <list default="true" id="f79f5f63-b56b-48ae-a7e4-57173f05a935" name="Changes" comment="commited" />
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -57,35 +55,38 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent"><![CDATA[{
+--  "keyToString": {
+--    "Flask server.Blockchain-Based Voting System.executor": "Run",
+--    "Python.app.executor": "Debug",
+--    "RunOnceActivity.ShowReadmeOnStart": "true",
+--    "RunOnceActivity.git.unshallow": "true",
+--    "git-widget-placeholder": "master",
+--    "ignore.virus.scanning.warn.message": "true",
+--    "last_opened_file_path": "C:/Users/selim/Documents/University/Project/Python/Blockchain-Based Voting System",
+--    "node.js.detected.package.eslint": "true",
+--    "node.js.detected.package.tslint": "true",
+--    "node.js.selected.package.eslint": "(autodetect)",
+--    "node.js.selected.package.tslint": "(autodetect)",
+--    "nodejs_package_manager_path": "npm",
+--    "vue.rearranger.settings.migration": "true"
+-+  <component name="PropertiesComponent">{
+-+  &quot;keyToString&quot;: {
+-+    &quot;Flask server.Blockchain-Based Voting System.executor&quot;: &quot;Run&quot;,
+-+    &quot;Python.app.executor&quot;: &quot;Debug&quot;,
+-+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-+    &quot;last_opened_file_path&quot;: &quot;C:/Users/selim/Documents/University/Project/Python/Blockchain-Based Voting System&quot;,
+-+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-   }
+--}]]></component>
+-+}</component>
+-   <component name="RecentsManager">
+-     <key name="MoveFile.RECENT_KEYS">
+-       <recent name="C:\Users\selim\Documents\University\Project\Python\Blockchain-Based Voting System\Blockchain" />
+-       <recent name="C:\Users\selim\Documents\University\Project\Python\Blockchain-Based Voting System\Utils" />
+-     </key>
+-   </component>
+--  <component name="RunManager" selected="Python.app">
+-+  <component name="RunManager" selected="Flask server.Blockchain-Based Voting System">
+-     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-       <module name="Blockchain-Based Voting System" />
+-       <option name="ENV_FILES" value="" />
+-       <option name="INTERPRETER_OPTIONS" value="" />
+-       <option name="PARENT_ENVS" value="true" />
+-+      <envs>
+-+        <env name="PYTHONUNBUFFERED" value="1" />
+-+      </envs>
+-       <option name="SDK_HOME" value="" />
+-       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+-       <option name="IS_MODULE_SDK" value="true" />
+-@@ -228,7 +229,15 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1744843221557</updated>
+-     </task>
+--    <option name="localTasksCounter" value="11" />
+-+    <task id="LOCAL-00011" summary="commited">
+-+      <option name="closed" value="true" />
+-+      <created>1744843983592</created>
+-+      <option name="number" value="00011" />
+-+      <option name="presentableId" value="LOCAL-00011" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1744843983592</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="12" />
+-     <servers />
+-   </component>
+-   <component name="TypeScriptGeneratedFilesManager">
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12_[Changes]/shelved.patch	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
++++ /dev/null	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
+@@ -1,138 +0,0 @@
+-Index: Utils/encryption.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>import os\r\nfrom Crypto.Cipher import AES\r\n\r\n\r\ndef pad(data):\r\n    padding_length = 16 - len(data)%16\r\n    padding = bytes([padding_length]* padding_length)\r\n    return  data + padding\r\n\r\ndef unpad(data):\r\n    padding_length = data[-1]\r\n    if padding_length < 1 or padding_length > 16:\r\n        raise ValueError(\"Padding is Invalid\")\r\n    return data[:-padding_length]\r\n\r\ndef encrypt(input_file, output_file):\r\n    key = os.urandom(32)\r\n    iv = os.urandom(16)\r\n    cipher = AES.new(key, AES.MODE_CBC, iv)\r\n\r\n    try:\r\n        with open(input_file, 'rb') as f:\r\n            plaintext = f.read()\r\n\r\n        padded_plaintext = pad(plaintext)\r\n        ciphertext = cipher.encrypt(padded_plaintext)\r\n\r\n        with open(output_file, 'wb') as f:\r\n            f.write(iv + ciphertext)\r\n\r\n        return key.hex(), iv.hex()\r\n    except Exception as e:\r\n        print(f\"An error occurred during encryption: {str(e)}\")\r\n        return None, None\r\n\r\ndef decrypt(key, iv, input_file, output_file):\r\n    try:\r\n        decoded_key = bytes.fromhex(key)\r\n        iv_bytes = bytes.fromhex(iv)\r\n\r\n        if len(decoded_key) != 32:\r\n            raise ValueError(\"Invalid AES key length\")\r\n\r\n        cipher = AES.new(decoded_key, AES.MODE_CBC, iv_bytes)\r\n\r\n        with open(input_file, 'rb') as f:\r\n            encrypted_data = f.read()\r\n\r\n        ciphertext = encrypted_data[16:]\r\n        decrypted_padded = cipher.decrypt(ciphertext)\r\n        decrypted = unpad(decrypted_padded)\r\n\r\n        with open(output_file, 'wb') as f:\r\n            f.write(decrypted)\r\n\r\n    except Exception as e:\r\n        print(f\"Decryption error: {str(e)}\")\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/Utils/encryption.py b/Utils/encryption.py
+---- a/Utils/encryption.py	(revision 96905a26728ca348fc3cdec0d019a6ec61409372)
+-+++ b/Utils/encryption.py	(date 1744842157765)
+-@@ -1,5 +1,6 @@
+- import os
+--from Crypto.Cipher import AES
+-+from Cryptodome.Cipher import AES
+-+
+- 
+- 
+- def pad(data):
+-Index: test.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/test.py b/test.py
+-new file mode 100644
+---- /dev/null	(date 1744842134902)
+-+++ b/test.py	(date 1744842134902)
+-@@ -0,0 +1,3 @@
+-+from Cryptodome.Cipher import AES
+-+
+-+print("Import success!")
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f79f5f63-b56b-48ae-a7e4-57173f05a935\" name=\"Changes\" comment=\"commited\">\r\n      <change afterPath=\"$PROJECT_DIR$/Utils/admin_decryption.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass\">\r\n    <envs>\r\n      <env key=\"FLASK_APP\" value=\"app\" />\r\n    </envs>\r\n    <option name=\"myCustomStartScript\" value=\"import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass\" />\r\n    <option name=\"myEnvs\">\r\n      <map>\r\n        <entry key=\"FLASK_APP\" value=\"app\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;MohamedSelimMah&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/MohamedSelimMah/Blockchain_Based_Voting_System.git&quot;,\r\n    &quot;accountId&quot;: &quot;45ca71d9-b2d6-4af7-9e16-8b695a65ec04&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2vjUwp0NW1XqNiq37Pmmok9k1J2\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Flask server.Blockchain-Based Voting System.executor\": \"Run\",\r\n    \"Python.app.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/selim/Documents/University/Project/Python/Blockchain-Based Voting System\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\selim\\Documents\\University\\Project\\Python\\Blockchain-Based Voting System\\Blockchain\" />\r\n      <recent name=\"C:\\Users\\selim\\Documents\\University\\Project\\Python\\Blockchain-Based Voting System\\Utils\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Flask server.Blockchain-Based Voting System\">\r\n    <configuration name=\"app\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\r\n      <module name=\"Blockchain-Based Voting System\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"C:\\Users\\selim\\Documents\\University\\Project\\Python\\Blockchain-Based Voting System\\app.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Blockchain-Based Voting System\" type=\"Python.FlaskServer\">\r\n      <module name=\"Blockchain-Based Voting System\" />\r\n      <option name=\"target\" value=\"$PROJECT_DIR$/app.py\" />\r\n      <option name=\"targetType\" value=\"PATH\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54\" />\r\n        <option value=\"bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f79f5f63-b56b-48ae-a7e4-57173f05a935\" name=\"Changes\" comment=\"\" />\r\n      <created>1744658218156</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1744658218156</updated>\r\n      <workItem from=\"1744658219384\" duration=\"4148000\" />\r\n      <workItem from=\"1744705080638\" duration=\"316000\" />\r\n      <workItem from=\"1744719464807\" duration=\"597000\" />\r\n      <workItem from=\"1744744107653\" duration=\"188000\" />\r\n      <workItem from=\"1744746328915\" duration=\"2713000\" />\r\n      <workItem from=\"1744750589446\" duration=\"1797000\" />\r\n      <workItem from=\"1744752868185\" duration=\"19000\" />\r\n      <workItem from=\"1744787608499\" duration=\"134000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744659028835</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744659028835</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744660925605</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744660925605</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744664378382</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744664378382</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744746860692</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744746860692</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744747624559</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744747624559</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744747691182</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744747691182</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744747923695</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744747923695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744748460650</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744748460651</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744752314212</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744752314212</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"commited\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"commited\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/Blockchain_Based_Voting_System$Blockchain_Based_Voting_System.coverage\" NAME=\"Blockchain-Based Voting System Coverage Results\" MODIFIED=\"1744787625167\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"\" />\r\n    <SUITE FILE_PATH=\"coverage/Blockchain_Based_Voting_System$app.coverage\" NAME=\"app Coverage Results\" MODIFIED=\"1744748365267\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 96905a26728ca348fc3cdec0d019a6ec61409372)
+-+++ b/.idea/workspace.xml	(date 1744845134865)
+-@@ -5,8 +5,9 @@
+-   </component>
+-   <component name="ChangeListManager">
+-     <list default="true" id="f79f5f63-b56b-48ae-a7e4-57173f05a935" name="Changes" comment="commited">
+--      <change afterPath="$PROJECT_DIR$/Utils/admin_decryption.py" afterDir="false" />
+-+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/Utils/encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/encryption.py" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-@@ -43,7 +44,7 @@
+-   <component name="GithubPullRequestsUISettings">{
+-   &quot;selectedUrlAndAccountId&quot;: {
+-     &quot;url&quot;: &quot;https://github.com/MohamedSelimMah/Blockchain_Based_Voting_System.git&quot;,
+--    &quot;accountId&quot;: &quot;45ca71d9-b2d6-4af7-9e16-8b695a65ec04&quot;
+-+    &quot;accountId&quot;: &quot;d318549b-e63f-443f-b870-44e55bb91043&quot;
+-   }
+- }</component>
+-   <component name="ProjectColorInfo">{
+-@@ -55,23 +56,26 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent"><![CDATA[{
+--  "keyToString": {
+--    "Flask server.Blockchain-Based Voting System.executor": "Run",
+--    "Python.app.executor": "Run",
+--    "RunOnceActivity.ShowReadmeOnStart": "true",
+--    "RunOnceActivity.git.unshallow": "true",
+--    "git-widget-placeholder": "master",
+--    "ignore.virus.scanning.warn.message": "true",
+--    "last_opened_file_path": "C:/Users/selim/Documents/University/Project/Python/Blockchain-Based Voting System",
+--    "node.js.detected.package.eslint": "true",
+--    "node.js.detected.package.tslint": "true",
+--    "node.js.selected.package.eslint": "(autodetect)",
+--    "node.js.selected.package.tslint": "(autodetect)",
+--    "nodejs_package_manager_path": "npm",
+--    "vue.rearranger.settings.migration": "true"
+-+  <component name="PropertiesComponent">{
+-+  &quot;keyToString&quot;: {
+-+    &quot;Flask server.Blockchain-Based Voting System.executor&quot;: &quot;Run&quot;,
+-+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+-+    &quot;Python.blockchain.executor&quot;: &quot;Run&quot;,
+-+    &quot;Python.encryption.executor&quot;: &quot;Run&quot;,
+-+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+-+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-+    &quot;last_opened_file_path&quot;: &quot;C:/Users/selim/Documents/University/Project/Python/Blockchain-Based Voting System&quot;,
+-+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-   }
+--}]]></component>
+-+}</component>
+-   <component name="RecentsManager">
+-     <key name="MoveFile.RECENT_KEYS">
+-       <recent name="C:\Users\selim\Documents\University\Project\Python\Blockchain-Based Voting System\Blockchain" />
+-@@ -122,8 +126,8 @@
+-   <component name="SharedIndexes">
+-     <attachedChunks>
+-       <set>
+--        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
+--        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
+-+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.25659.43" />
+-+        <option value="bundled-python-sdk-181015f7ab06-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.25659.43" />
+-       </set>
+-     </attachedChunks>
+-   </component>
+-@@ -143,6 +147,8 @@
+-       <workItem from="1744750589446" duration="1797000" />
+-       <workItem from="1744752868185" duration="19000" />
+-       <workItem from="1744787608499" duration="134000" />
+-+      <workItem from="1744789209591" duration="2004000" />
+-+      <workItem from="1744825492835" duration="1478000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="commited">
+-       <option name="closed" value="true" />
+-@@ -227,7 +233,10 @@
+-     <option name="LAST_COMMIT_MESSAGE" value="commited" />
+-   </component>
+-   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+--    <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$Blockchain_Based_Voting_System.coverage" NAME="Blockchain-Based Voting System Coverage Results" MODIFIED="1744787625167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+--    <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$app.coverage" NAME="app Coverage Results" MODIFIED="1744748365267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+-+    <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$test.coverage" NAME="test Coverage Results" MODIFIED="1744842134927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+-+    <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$Blockchain_Based_Voting_System.coverage" NAME="Blockchain-Based Voting System Coverage Results" MODIFIED="1744840987692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+-+    <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$encryption.coverage" NAME="encryption Coverage Results" MODIFIED="1744842157822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
+-+    <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$app.coverage" NAME="app Coverage Results" MODIFIED="1744842174125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+-+    <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$blockchain.coverage" NAME="blockchain Coverage Results" MODIFIED="1744789335587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Blockchain" />
+-   </component>
+- </project>
+-\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_16_04_2025_23_02__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_16_04_2025_23_02__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_16_04_2025_23_02__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_16_04_2025_23_02__Changes_.xml	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
++++ /dev/null	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_16_04_2025_23_02_[Changes]" date="1744840980046" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_04_2025_23_02_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 16/04/2025 23:02 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37__Changes_.xml	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
++++ /dev/null	(revision 21315cce9bd1e1363ba23fd5acfdddf7fc92340f)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_17_04_2025_10_37_[Changes]" date="1744882673982" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 17/04/2025 10:37 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f79f5f63-b56b-48ae-a7e4-57173f05a935\" name=\"Changes\" comment=\"commited\">\r\n      <change afterPath=\"$PROJECT_DIR$/style/style.css\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/templates/register.html\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/templates/results.html\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/templates/vote.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_04_2025_23_02_[Changes]/shelved.patch\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_04_2025_23_02__Changes_.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12_[Changes]/shelved.patch\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12__Changes_.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37_[Changes]/shelved.patch\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37__Changes_.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass\">\r\n    <envs>\r\n      <env key=\"FLASK_APP\" value=\"app\" />\r\n    </envs>\r\n    <option name=\"myCustomStartScript\" value=\"import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass\" />\r\n    <option name=\"myEnvs\">\r\n      <map>\r\n        <entry key=\"FLASK_APP\" value=\"app\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;MohamedSelimMah&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/MohamedSelimMah/Blockchain_Based_Voting_System.git\",\r\n    \"accountId\": \"d318549b-e63f-443f-b870-44e55bb91043\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2vjUwp0NW1XqNiq37Pmmok9k1J2\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"Flask server.Blockchain-Based Voting System.executor\": \"Run\",\r\n    \"Flask server.Blockchain_Based_Voting_System.executor\": \"Run\",\r\n    \"Python.app.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/selim/Documents/University/Project/Python/Blockchain-Based Voting System\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\ramez\\OneDrive\\Documents\\Python\\Blockchain_Based_Voting_System\" />\r\n      <recent name=\"C:\\Users\\selim\\Documents\\University\\Project\\Python\\Blockchain-Based Voting System\\Blockchain\" />\r\n      <recent name=\"C:\\Users\\selim\\Documents\\University\\Project\\Python\\Blockchain-Based Voting System\\Utils\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Flask server.Blockchain_Based_Voting_System\">\r\n    <configuration name=\"app\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Blockchain-Based Voting System\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/app.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Blockchain-Based Voting System\" type=\"Python.FlaskServer\">\r\n      <module name=\"Blockchain-Based Voting System\" />\r\n      <option name=\"target\" value=\"$PROJECT_DIR$/app.py\" />\r\n      <option name=\"targetType\" value=\"PATH\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Blockchain_Based_Voting_System\" type=\"Python.FlaskServer\">\r\n      <module name=\"Blockchain_Based_Voting_System\" />\r\n      <option name=\"target\" value=\"$PROJECT_DIR$/app.py\" />\r\n      <option name=\"targetType\" value=\"PATH\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.app\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PY-251.23774.444\" />\r\n        <option value=\"bundled-python-sdk-890ed5b35930-d9c5bdb153f4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.23774.444\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f79f5f63-b56b-48ae-a7e4-57173f05a935\" name=\"Changes\" comment=\"\" />\r\n      <created>1744658218156</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1744658218156</updated>\r\n      <workItem from=\"1744658219384\" duration=\"4148000\" />\r\n      <workItem from=\"1744705080638\" duration=\"316000\" />\r\n      <workItem from=\"1744719464807\" duration=\"597000\" />\r\n      <workItem from=\"1744744107653\" duration=\"188000\" />\r\n      <workItem from=\"1744746328915\" duration=\"2713000\" />\r\n      <workItem from=\"1744750589446\" duration=\"1797000\" />\r\n      <workItem from=\"1744752868185\" duration=\"19000\" />\r\n      <workItem from=\"1744787608499\" duration=\"134000\" />\r\n      <workItem from=\"1745076709954\" duration=\"38000\" />\r\n      <workItem from=\"1745167712512\" duration=\"1449000\" />\r\n      <workItem from=\"1745220420081\" duration=\"34000\" />\r\n      <workItem from=\"1745240465225\" duration=\"191000\" />\r\n      <workItem from=\"1745261743373\" duration=\"2545000\" />\r\n      <workItem from=\"1745349786215\" duration=\"5736000\" />\r\n      <workItem from=\"1745613206373\" duration=\"1348000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744659028835</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744659028835</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744660925605</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744660925605</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744664378382</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744664378382</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744746860692</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744746860692</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744747624559</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744747624559</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744747691182</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744747691182</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744747923695</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744747923695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744748460650</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744748460651</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744752314212</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744752314212</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744843221556</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744843221557</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744882716627</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744882716627</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744884214311</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744884214311</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744884233889</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744884233889</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745169129161</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745169129161</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745240593769</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745240593769</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745262023529</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745262023529</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745263109470</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745263109470</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745265943071</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745265943071</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745350421041</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745350421041</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745351484949</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745351484949</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745351491297</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745351491297</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745351602130</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745351602130</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745352088121</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745352088122</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745352167193</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745352167193</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745355809583</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745355809584</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745355842853</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745355842853</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"commited\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745446684137</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745446684137</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"28\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnknownFeatures\">\r\n    <option featureType=\"com.intellij.fileTypeFactory\" implementationName=\".env\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"commited\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"commited\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/Blockchain_Based_Voting_System$Blockchain_Based_Voting_System.coverage\" NAME=\"Blockchain_Based_Voting_System Coverage Results\" MODIFIED=\"1745355903104\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"\" />\r\n    <SUITE FILE_PATH=\"coverage/Blockchain_Based_Voting_System$app.coverage\" NAME=\"app Coverage Results\" MODIFIED=\"1745075320564\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a1db113ac00516942cd0af6fca984da37a068e03)
++++ b/.idea/workspace.xml	(date 1745619300586)
+@@ -5,19 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="f79f5f63-b56b-48ae-a7e4-57173f05a935" name="Changes" comment="commited">
+-      <change afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/results.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/vote.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_04_2025_23_02_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_04_2025_23_02__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_00_12__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2025_10_37__Changes_.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -28,8 +16,6 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="Python Script" />
+-        <option value="HTML File" />
+-        <option value="CSS File" />
+       </list>
+     </option>
+   </component>
+@@ -53,12 +39,12 @@
+     &quot;assignee&quot;: &quot;MohamedSelimMah&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/MohamedSelimMah/Blockchain_Based_Voting_System.git",
+-    "accountId": "d318549b-e63f-443f-b870-44e55bb91043"
+-  }
+-}]]></component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/MohamedSelimMah/Blockchain_Based_Voting_System.git&quot;,
++    &quot;accountId&quot;: &quot;45ca71d9-b2d6-4af7-9e16-8b695a65ec04&quot;
++  }
++}</component>
+   <component name="ProblemsViewState">
+     <option name="selectedTabId" value="CurrentFile" />
+   </component>
+@@ -66,34 +52,35 @@
+   &quot;associatedIndex&quot;: 8
+ }</component>
+   <component name="ProjectId" id="2vjUwp0NW1XqNiq37Pmmok9k1J2" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "Flask server.Blockchain-Based Voting System.executor": "Run",
+-    "Flask server.Blockchain_Based_Voting_System.executor": "Run",
+-    "Python.app.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "master",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "last_opened_file_path": "C:/Users/selim/Documents/University/Project/Python/Blockchain-Based Voting System",
+-    "list.type.of.created.stylesheet": "CSS",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Flask server.Blockchain-Based Voting System.executor&quot;: &quot;Run&quot;,
++    &quot;Flask server.Blockchain_Based_Voting_System.executor&quot;: &quot;Run&quot;,
++    &quot;Python.app.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/selim/Documents/University/Project/Python/Blockchain_Based_Voting_System&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\selim\Documents\University\Project\Python\Blockchain_Based_Voting_System" />
++    </key>
+     <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\ramez\OneDrive\Documents\Python\Blockchain_Based_Voting_System" />
+       <recent name="C:\Users\selim\Documents\University\Project\Python\Blockchain-Based Voting System\Blockchain" />
+       <recent name="C:\Users\selim\Documents\University\Project\Python\Blockchain-Based Voting System\Utils" />
+     </key>
+@@ -130,7 +117,7 @@
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+@@ -146,7 +133,7 @@
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="WORKING_DIRECTORY" value="" />
+       <option name="IS_MODULE_SDK" value="false" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+@@ -163,8 +150,8 @@
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PY-251.23774.444" />
+-        <option value="bundled-python-sdk-890ed5b35930-d9c5bdb153f4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.23774.444" />
++        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
++        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
+       </set>
+     </attachedChunks>
+   </component>
+@@ -190,7 +177,7 @@
+       <workItem from="1745240465225" duration="191000" />
+       <workItem from="1745261743373" duration="2545000" />
+       <workItem from="1745349786215" duration="5736000" />
+-      <workItem from="1745613206373" duration="1348000" />
++      <workItem from="1745444290080" duration="1968000" />
+     </task>
+     <task id="LOCAL-00001" summary="commited">
+       <option name="closed" value="true" />
+@@ -402,13 +389,37 @@
+     </task>
+     <task id="LOCAL-00027" summary="commited">
+       <option name="closed" value="true" />
+-      <created>1745446684137</created>
++      <created>1745444519008</created>
+       <option name="number" value="00027" />
+       <option name="presentableId" value="LOCAL-00027" />
+       <option name="project" value="LOCAL" />
+-      <updated>1745446684137</updated>
++      <updated>1745444519009</updated>
++    </task>
++    <task id="LOCAL-00028" summary="commited">
++      <option name="closed" value="true" />
++      <created>1745445724537</created>
++      <option name="number" value="00028" />
++      <option name="presentableId" value="LOCAL-00028" />
++      <option name="project" value="LOCAL" />
++      <updated>1745445724537</updated>
+     </task>
+-    <option name="localTasksCounter" value="28" />
++    <task id="LOCAL-00029" summary="commited">
++      <option name="closed" value="true" />
++      <created>1745445734245</created>
++      <option name="number" value="00029" />
++      <option name="presentableId" value="LOCAL-00029" />
++      <option name="project" value="LOCAL" />
++      <updated>1745445734245</updated>
++    </task>
++    <task id="LOCAL-00030" summary="commited">
++      <option name="closed" value="true" />
++      <created>1745445744608</created>
++      <option name="number" value="00030" />
++      <option name="presentableId" value="LOCAL-00030" />
++      <option name="project" value="LOCAL" />
++      <updated>1745445744608</updated>
++    </task>
++    <option name="localTasksCounter" value="31" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -421,8 +432,19 @@
+     <MESSAGE value="commited" />
+     <option name="LAST_COMMIT_MESSAGE" value="commited" />
+   </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
++          <url>file://$PROJECT_DIR$/app.py</url>
++          <line>60</line>
++          <option name="timeStamp" value="2" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
++  </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$Blockchain_Based_Voting_System.coverage" NAME="Blockchain_Based_Voting_System Coverage Results" MODIFIED="1745355903104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
++    <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$Blockchain_Based_Voting_System.coverage" NAME="Blockchain_Based_Voting_System Coverage Results" MODIFIED="1745446185664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+     <SUITE FILE_PATH="coverage/Blockchain_Based_Voting_System$app.coverage" NAME="app Coverage Results" MODIFIED="1745075320564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+   </component>
+ </project>
+\ No newline at end of file
