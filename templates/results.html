@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Live Election Results</h1>
+        <canvas id="resultsChart"></canvas>
+    </div>
+    <script>
+        fetch('/admis/results',{
+            headers: {'X-Admin-key': 'default-secret-key'}
+        })
+        .then(response => response.json())
+        .then(data => {
+            const ctx = document.getElementById('resultsChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                options: {
+                    labem:'votes',
+                    data: Object.values(data.results)
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+                }
+            })
+        })
+    </script>
+</body>
+</html>
