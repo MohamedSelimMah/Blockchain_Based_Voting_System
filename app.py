@@ -37,11 +37,6 @@ def token_required(f):
             return jsonify({'error': 'Token invalid!'}), 403
         return f(*args, **kwargs)
     return decorated
-
-
-
-
-
 # Admin route protection
 def admin_required(f):
     @wraps(f)
@@ -84,6 +79,25 @@ def vote():
     voted_ids.add(voter_hash)
 
     return jsonify({'message': 'Vote successfully recorded.'}), 200
+
+@app.route('/user/register', methods=['POST'])
+def  register_user():
+    data = request.get_json()
+    username= data.get('username')
+    password = data.get('password')
+
+    if not username or not password:
+        return jsonify({'error': 'Username and password required'}),400
+    if username in users:
+        return jsonify({'error': 'User already exists!'}), 400
+
+    users[username] = generate_password_hash(password)
+    return jsonify({'message':'User registered successfully!'}), 201
+
+
+
+
+
 
 # Mine a new block
 @app.route('/mine', methods=['GET'])
