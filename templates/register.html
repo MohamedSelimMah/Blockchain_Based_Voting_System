@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register to Vote</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Voter Registration</h1>
+        <form action="/register" method="POST">
+            <input type="text" name="voterId" placeholder="Enter your ID" required>
+            <button type="submit">Register</button>
+        </form>
+        <p><a href="/vote">Already registered? Vote here.</a></p>
+    </div>
+</body>
+</html>

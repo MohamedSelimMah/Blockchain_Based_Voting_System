@@ -1,10 +1,10 @@
-# 🗳️ Blockchain-Based Secure Voting System - v1.5
+# 🗳️ Blockchain-Based Secure Voting System - v2.0
 
-A secure blockchain-powered voting system built with Python and Flask. Ideal for those exploring blockchain, REST APIs, encryption, and secure digital voting systems.
+A secure blockchain-powered voting system built with Python and Flask. Perfect for exploring blockchain, REST APIs, encryption, and secure digital voting in a **distributed** environment.
 
 ---
 
-## ✅ Version 1.5 – Feature Enhancements
+## ✅ Version 2.0 – Major Feature Upgrades
 
 - ⚓️ Basic blockchain with Proof-of-Work (PoW)
 - 🗳️ Cast votes using the `/vote` endpoint
@@ -18,6 +18,12 @@ A secure blockchain-powered voting system built with Python and Flask. Ideal for
 - 📅 **Admin panel endpoints** for vote result visibility
 - 🔧 **Registration and validation logic** to manage voter eligibility
 
+### 🌐 Distributed Blockchain (New in v2.0)
+- 🌍 **Multi-node network support**
+- 🧠 **Consensus algorithm** to maintain single source of truth
+- 🔗 **Node registration & broadcasting**
+- 🔄 **Automatic chain syncing across nodes**
+
 ---
 
 ## 🚀 Getting Started
@@ -27,6 +33,7 @@ A secure blockchain-powered voting system built with Python and Flask. Ideal for
 - Python 3.x
 - Flask
 - `pycryptodome` (for AES encryption)
+- Requests (for inter-node communication)
 
 ### Installation
 
@@ -40,7 +47,7 @@ A secure blockchain-powered voting system built with Python and Flask. Ideal for
 2. **Install dependencies**
 
    ```bash
-   pip install flask pycryptodome
+   pip install flask pycryptodome requests
    ```
 
 3. **Run the app**
@@ -55,14 +62,16 @@ Server will run on `http://127.0.0.1:5000`
 
 ## 📱 API Endpoints
 
-| Method | Endpoint           | Description                                |
-|--------|--------------------|--------------------------------------------|
-| POST   | `/vote`            | Submit an encrypted vote                   |
-| GET    | `/mine`            | Mine votes into a block                    |
-| GET    | `/chain`           | View the entire blockchain                 |
-| POST   | `/register`        | Register a new voter                       |
-| POST   | `/admin/decrypt`   | Admin-only endpoint to decrypt votes       |
-| GET    | `/admin/results`   | Admin-only endpoint to view vote counts    |
+| Method | Endpoint               | Description                                  |
+|--------|------------------------|----------------------------------------------|
+| POST   | `/vote`                | Submit an encrypted vote                     |
+| GET    | `/mine`                | Mine votes into a block                      |
+| GET    | `/chain`               | View the entire blockchain                   |
+| POST   | `/register`            | Register a new voter                         |
+| POST   | `/admin/decrypt`       | Admin-only endpoint to decrypt votes         |
+| GET    | `/admin/results`       | Admin-only endpoint to view vote counts      |
+| POST   | `/nodes/register`      | Register new nodes to the network            |
+| GET    | `/nodes/resolve`       | Consensus algorithm to resolve chain         |
 
 ---
 
@@ -77,52 +86,54 @@ POST to `/vote`:
 }
 ```
 
-- `voterId` is validated and hashed for integrity.
-- Vote is encrypted using AES before storage.
-- Duplicate votes are rejected.
+- `voterId` is validated and hashed.
+- Vote is AES-encrypted.
+- One vote per voter enforced.
 
 ---
 
 ## 🔗 How It Works
 
-1. **Registration**: Voters register via `/register`. Validation logic ensures one-time registration.
-2. **Voting**: Validated voters submit votes, which are AES-encrypted.
-3. **Mining**: Pending votes mined into blocks with Proof-of-Work.
-4. **Blockchain**: Each block is chained via secure hashing.
+1. **Registration**: Voter registers once via `/register`.
+2. **Voting**: Voter submits encrypted vote via `/vote`.
+3. **Mining**: Pending votes are mined with PoW.
+4. **Distributed Network**:
+   - Nodes register with each other
+   - Chains are synced using a consensus algorithm
 5. **Admin Panel**:
-   - Only admin can decrypt and view vote contents.
-   - View results via `/admin/results`.
+   - Admin-only decryption of votes
+   - Vote results accessible via `/admin/results`
 
 ---
 
-## 🔗 Why Use Blockchain?
+## 🤝 Why Use Blockchain?
 
-- **Transparency**: Chain is publicly viewable
-- **Integrity**: Tamper-proof blocks
-- **Security**: Encrypted, private, and validated votes
+- **Transparency**: Public, traceable blockchain
+- **Integrity**: Tamper-resistant records
+- **Security**: Encrypted, validated, and permission-controlled
+- **Decentralization**: No single point of failure
 
 ---
 
 ## 🛠️ Coming Soon
 
-- Multi-node network
-- Consensus protocol
-- Web UI for voter interaction
-- Role-based access control
+- Web-based voting interface
+- Role-based access control (voter, admin, observer)
+- Enhanced consensus via PBFT or Raft
 
 ---
 
 ## 📘 Learn More
 
-This project covers:
-- Blockchain basics
-- Proof-of-Work
-- AES encryption
-- Flask API development
-- Secure app design
+This project helps you learn:
+- Distributed blockchain mechanics
+- Proof-of-Work & Consensus algorithms
+- AES encryption for privacy
+- Flask APIs for full-stack blockchain apps
+- Designing secure, decentralized systems
 
 ---
+
 ## 📄 License
 
 Open-source under the [MIT License](LICENSE)
-
