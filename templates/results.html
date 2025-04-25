@@ -11,7 +11,7 @@
         <canvas id="resultsChart"></canvas>
     </div>
     <script>
-        fetch('/admis/results',{
+        fetch('/admin/results',{
             headers: {'X-Admin-key': 'default-secret-key'}
         })
         .then(response => response.json())
@@ -21,7 +21,7 @@
                 type: 'bar',
                 options: {
                     labem:'votes',
-                    data: Object.values(data.results)
+                    data: Object.values(data.results),
                     backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
                 }
             })

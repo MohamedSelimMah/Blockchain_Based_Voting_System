@@ -1,13 +1,13 @@
+import hashlib
+import os
+from functools import wraps
+from urllib.parse import urlparse
+
+from dotenv import load_dotenv
 from flask import Flask, request, jsonify, render_template
-from graphviz import render
 
 from Blockchain.blockchain import Blockchain
-import hashlib
 from Utils.encryption import encrypt, decrypt
-from functools import wraps
-import os
-from dotenv import load_dotenv
-from  urllib.parse import urlparse
 
 load_dotenv()
 
@@ -91,7 +91,7 @@ def mine():
         'previous_hash': block['previous_hash'],
     }), 200
 
-# Show full chain
+
 @app.route('/chain', methods=['GET'])
 def full_chain():
     return jsonify({
@@ -215,15 +215,19 @@ def consensus():
 @app.route('/')
 def home():
     return "Blockchain Voting System - Endpoints: /vote, /mine, /chain, /register, /admin/*, /nodes"
-@app.route('/voter',methods=['GET'])
+
+
+@app.route('/vote',methods=['GET'])
 def vote_page():
     return render_template('vote.html')
-@app.route('/register_page',methods=['GET'])
+@app.route('/register',methods=['GET'])
 def register_page():
     return render_template('register.html')
 @app.route('/result',methods=['GET'])
 @admin_required
 def results_page():
     return render_template('results.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
