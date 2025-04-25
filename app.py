@@ -268,6 +268,9 @@ def register_page():
 @admin_required
 def results_page():
     return render_template('results.html')
+@app.route('/login', methods=['GET'])
+def login_page():
+    return render_template('login.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
