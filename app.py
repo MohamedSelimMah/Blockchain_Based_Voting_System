@@ -2,8 +2,6 @@ import hashlib
 import os
 from functools import wraps
 from urllib.parse import urlparse
-
-from Demos.win32ts_logoff_disconnected import username
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt, datetime
 from dotenv import load_dotenv
@@ -15,11 +13,11 @@ from Utils.encryption import encrypt, decrypt
 load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] ='RS_Group'
+app.config['SECRET_KEY'] = 'RS_Group'
 blockchain = Blockchain()
 voted_ids = set()
 registered_voters = set()
-users={}
+users = {}
 ADMIN_KEY = os.getenv("ADMIN_KEY", "default-secret-key")
 ADMIN_AES_KEY = os.getenv("ADMIN_AES_KEY", "default-secret-key")
 ADMIN_IV = os.getenv("ADMIN_IV", "default-secret-key")
@@ -33,13 +31,14 @@ def token_required(f):
             return jsonify({'message': 'Token is missing'}), 403
         try:
             data = jwt.decode(token, app.config['SECRET_KEY'], algorithms=["HS256"])
+            request.user = data
         except jwt.ExpiredSignatureError:
             return jsonify({'error': 'Token expired!'}), 403
         except:
             return jsonify({'error': 'Token invalid!'}), 403
         return f(*args, **kwargs)
     return decorated
-# Admin route protection
+
 def admin_required(f):
     @wraps(f)
     def wrapper(*args, **kwargs):
@@ -48,12 +47,13 @@ def admin_required(f):
         return f(*args, **kwargs)
     return wrapper
 
-# User submits vote
 @app.route('/vote', methods=['POST'])
+@token_required
 def vote():
     data = request.get_json()
-    voterId = data.get('voterId')
     vote = data.get('vote')
+    voterId = request.user.get('username')
+
     if not voterId or not vote:
         return jsonify({'error': 'voterId and vote are required'}), 400
 
@@ -83,41 +83,37 @@ def vote():
     return jsonify({'message': 'Vote successfully recorded.'}), 200
 
 @app.route('/user/register', methods=['POST'])
-def  register_user():
+def register_user():
     data = request.get_json()
-    username= data.get('username')
+    username = data.get('username')
     password = data.get('password')
 
     if not username or not password:
-        return jsonify({'error': 'Username and password required'}),400
+        return jsonify({'error': 'Username and password required'}), 400
     if username in users:
         return jsonify({'error': 'User already exists!'}), 400
 
     users[username] = generate_password_hash(password)
-    return jsonify({'message':'User registered successfully!'}), 201
+    return jsonify({'message': 'User registered successfully!'}), 201
 
 @app.route('/user/login', methods=['POST'])
 def login_user():
     data = request.get_json()
-    username= data.get('username')
+    username = data.get('username')
     password = data.get('password')
 
     if not username or not password:
-        return jsonify({'error': 'Username and password required'}),400
-    if username not in users or check_password_hash(users[username], password):
-        return jsonify({'error':'Invalid Credentials!'}), 401
+        return jsonify({'error': 'Username and password required'}), 400
+    if username not in users or not check_password_hash(users[username], password):
+        return jsonify({'error': 'Invalid Credentials!'}), 401
 
     token = jwt.encode({
         'username': username,
         'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1),
-    },app.config['SECRET_KEY'], algorithm="HS256"
-    )
+    }, app.config['SECRET_KEY'], algorithm="HS256")
+
     return jsonify({'token': token}), 200
 
-
-
-
-# Mine a new block
 @app.route('/mine', methods=['GET'])
 def mine():
     if not blockchain.transactions:
@@ -144,7 +140,6 @@ def mine():
         'previous_hash': block['previous_hash'],
     }), 200
 
-
 @app.route('/chain', methods=['GET'])
 def full_chain():
     return jsonify({
@@ -152,11 +147,10 @@ def full_chain():
         'length': len(blockchain.chain),
     }), 200
 
-# Voter registration
 @app.route('/register', methods=['POST'])
+@token_required
 def register():
-    data = request.get_json()
-    voterId = data.get('voterId')
+    voterId = request.user.get('username')
 
     if not voterId:
         return jsonify({'error': 'Voter ID is required'}), 400
@@ -169,17 +163,14 @@ def register():
     registered_voters.add(voter_hash)
     return jsonify({'message': 'Voter registered successfully', 'voter_hash': voter_hash}), 200
 
-# Admin: view registered voters
 @app.route('/admin/register', methods=['GET'])
 def list_voters():
     return jsonify({'voters': list(registered_voters)}), 200
 
-# Admin: view voting results
 @app.route('/admin/results', methods=['GET'])
 @admin_required
 def results():
     vote_counts = {}
-
     for block in blockchain.chain:
         for tx in block['transactions']:
             if tx['sender'] == 'network':
@@ -198,10 +189,8 @@ def results():
                 os.remove("temp_decrypted.txt")
             except Exception as e:
                 print(f"Decryption failed for {encrypted_file}: {e}")
-
     return jsonify({"results": vote_counts}), 200
 
-# Admin: decrypt a specific file
 @app.route('/admin/decrypt', methods=['GET'])
 @admin_required
 def admin_decrypt():
@@ -225,15 +214,13 @@ def admin_decrypt():
             vote = f.read().strip()
         os.remove("temp_admin_decrypted.txt")
         return jsonify({'decrypted_vote': vote}), 200
-
     except Exception as e:
         return jsonify({'error': f"Decryption failed: {str(e)}"}), 500
 
-
-@app.route('/nodes/register',methods=['POST'])
+@app.route('/nodes/register', methods=['POST'])
 def register_nodes():
     values = request.get_json()
-    nodes  = values.get('nodes')
+    nodes = values.get('nodes')
 
     if nodes is None:
         return jsonify({'error': 'Please Provide a list of node URLs'}), 400
@@ -245,7 +232,7 @@ def register_nodes():
         elif parsed_url.path:
             blockchain.nodes.add(parsed_url.path)
         else:
-            return jsonify({'error': 'Invalid Node URL : {node}'}), 400
+            return jsonify({'error': f'Invalid Node URL: {node}'}), 400
     return jsonify({
         'message': 'New nodes added',
         'total_nodes': list(blockchain.nodes),
@@ -254,33 +241,33 @@ def register_nodes():
 @app.route('/nodes/resolve', methods=['GET'])
 def consensus():
     replaced = blockchain.resolve_conflicts()
-
     if replaced:
         return jsonify({
-            'message':'Chain was replaced with a longer valid chain.',
+            'message': 'Chain was replaced with a longer valid chain.',
             'new_chain': blockchain.chain
-        }),200
+        }), 200
     else:
         return jsonify({
             'message': 'Our chain is authoritative.',
             'chain': blockchain.chain
         }), 200
+
 @app.route('/')
 def home():
     return "Blockchain Voting System - Endpoints: /vote, /mine, /chain, /register, /admin/*, /nodes"
 
-
-@app.route('/vote',methods=['GET'])
+@app.route('/vote', methods=['GET'])
 def vote_page():
     return render_template('vote.html')
-@app.route('/register',methods=['GET'])
+
+@app.route('/register', methods=['GET'])
 def register_page():
     return render_template('register.html')
-@app.route('/result',methods=['GET'])
+
+@app.route('/result', methods=['GET'])
 @admin_required
 def results_page():
     return render_template('results.html')
-
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
