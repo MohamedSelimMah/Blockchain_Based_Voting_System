@@ -1,36 +1,25 @@
-from flask import Flask, request, jsonify, render_template
-from graphviz import render
-from werkzeug.security import generate_password_hash, check_password_hash
-import jwt, datetime
-from Blockchain.blockchain import Blockchain
 import hashlib
-from Utils.encryption import encrypt, decrypt
-from functools import wraps
 import os
+from functools import wraps
+from urllib.parse import urlparse
+
 from dotenv import load_dotenv
-from  urllib.parse import urlparse
+from flask import Flask, request, jsonify, render_template
+
+from Blockchain.blockchain import Blockchain
+from Utils.encryption import encrypt, decrypt
 
 load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_Key'] = 'RS_Group'
 blockchain = Blockchain()
 voted_ids = set()
 registered_voters = set()
-users={}
 
 ADMIN_KEY = os.getenv("ADMIN_KEY", "default-secret-key")
 ADMIN_AES_KEY = os.getenv("ADMIN_AES_KEY", "default-secret-key")
 ADMIN_IV = os.getenv("ADMIN_IV", "default-secret-key")
 MINER_REWARD_ADDRESS = "miner-reward-address"
-
-
-
-
-
-
-
-
 
 # Admin route protection
 def admin_required(f):
@@ -102,7 +91,7 @@ def mine():
         'previous_hash': block['previous_hash'],
     }), 200
 
-# Show full chain
+
 @app.route('/chain', methods=['GET'])
 def full_chain():
     return jsonify({
@@ -226,15 +215,19 @@ def consensus():
 @app.route('/')
 def home():
     return "Blockchain Voting System - Endpoints: /vote, /mine, /chain, /register, /admin/*, /nodes"
-@app.route('/voter',methods=['GET'])
+
+
+@app.route('/vote',methods=['GET'])
 def vote_page():
     return render_template('vote.html')
-@app.route('/register_page',methods=['GET'])
+@app.route('/register',methods=['GET'])
 def register_page():
     return render_template('register.html')
 @app.route('/result',methods=['GET'])
 @admin_required
 def results_page():
     return render_template('results.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
