@@ -23,7 +23,12 @@ ADMIN_AES_KEY = os.getenv("ADMIN_AES_KEY", "default-secret-key")
 ADMIN_IV = os.getenv("ADMIN_IV", "default-secret-key")
 MINER_REWARD_ADDRESS = "miner-reward-address"
 
-
+def token_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        token = request.headers.get('Authorization')
+        if not token:
+            return jsonify({'message': 'Token is missing'}), 403
 
 
 
