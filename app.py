@@ -2,6 +2,8 @@ import hashlib
 import os
 from functools import wraps
 from urllib.parse import urlparse
+
+from Demos.win32ts_logoff_disconnected import username
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt, datetime
 from dotenv import load_dotenv
@@ -94,7 +96,23 @@ def  register_user():
     users[username] = generate_password_hash(password)
     return jsonify({'message':'User registered successfully!'}), 201
 
+@app.route('/user/login', methods=['POST'])
+def login_user():
+    data = request.get_json()
+    username= data.get('username')
+    password = data.get('password')
 
+    if not username or not password:
+        return jsonify({'error': 'Username and password required'}),400
+    if username not in users or check_password_hash(users[username], password):
+        return jsonify({'error':'Invalid Credentials!'}), 401
+
+    token = jwt.encode({
+        'username': username,
+        'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=1),
+    },app.config['SECRET_KEY'], algorithm="HS256"
+    )
+    return jsonify({'token': token}), 200
 
 
 
