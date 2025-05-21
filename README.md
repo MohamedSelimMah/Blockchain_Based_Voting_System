@@ -1,4 +1,4 @@
-# 🗳️ Blockchain-Based Secure Voting System - v2.0
+# 🗳️ Blockchain-Based Secure Voting System - v2.0 
 
 A secure blockchain-powered voting system built with Python and Flask. Perfect for exploring blockchain, REST APIs, encryption, and secure digital voting in a **distributed** environment.
 
